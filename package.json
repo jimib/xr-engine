@@ -1,0 +1,43 @@
+{
+  "name": "@xr-engine/r3f-bridge",
+  "version": "0.1.0",
+  "description": "Single-canvas bridge between 8th Wall XR engine and React Three Fiber",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@react-three/fiber": ">=8.0.0",
+    "react": ">=18.0.0",
+    "three": ">=0.150.0"
+  },
+  "devDependencies": {
+    "@react-three/fiber": "^8.15.0",
+    "@types/react": "^18.2.0",
+    "@types/three": "^0.160.0",
+    "react": "^18.2.0",
+    "three": "^0.160.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimib/xr-engine"
+  }
+}
